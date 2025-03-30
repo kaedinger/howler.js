@@ -565,6 +565,7 @@
     self.init(o);
   };
   Howl.prototype = {
+    getCache: function() { return cache[this._src]; }, // access audio buffer of this Howl
     /**
      * Initialize a new Howl group object.
      * @param  {Object} o Passed in properties for this group.
